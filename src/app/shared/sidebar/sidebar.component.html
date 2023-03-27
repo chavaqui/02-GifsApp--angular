@@ -1,0 +1,16 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h2 class="text-light">
+      Gifs-App
+    </h2>
+    <hr class="text-white"/>
+    <button (click)="arrayGifs()" class="btn btn-success">
+      traer
+    </button>
+    <div class="list-group list-reset">
+      Dashboard
+      <a *ngFor="let item of historial" href="#"
+      class="list-group-item list-group-item-action m-1">
+        {{item | titlecase}}
+      </a>
+    </div>
+  </div>
